@@ -1,0 +1,22 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Contact;
+use Illuminate\Database\Seeder;
+
+class ContactsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+
+        Contact::truncate();
+        Contact::create(['Contacs_Name' => 'Jeff', 'Contacs_Email' => 'Jeff@codebyjeff.com']);
+        // Contact::factory(1)->create();
+    }
+}
